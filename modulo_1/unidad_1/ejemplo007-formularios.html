@@ -1,18 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formularios</title>
-</head>
-
-<body>
-    <form action="https:">
-        <table>
-
-        </table>
-    </form>
-</body>
-
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejemplo de uso de titulo</title>
+    </head>
+    <body>
+        <form action="https://www.google.com" method="POST">
+            <table>
+                <tr>
+                    <td>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre">
+                    </td>
+                    <td>
+                        <label for="Pais">Pais</label>
+                        <select id="Pais" name="Pais">
+                            <option value="Ec">Ecuador</option>
+                            <option value="Pe">Peru</option>
+                            <option value="Co">Colombia</option>
+                            <option value="Es">España</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" name="apellido">
+                    </td>
+                    <td>
+                        <label for="Provincia">Provincia</label>
+                        <select id="Provincia" name="Provincia">
+                            <option value="Ec">Pichincha</option>
+                            <option value="Pe">Esmeraldas</option>
+                            <option value="Co">Latacunga</option>
+                            <option value="Es">Cuenva</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="nombre">Direccion</label>
+                        <textarea id="Direccion" name="Direccion" rows="5" cols="20">
+                            Av.Occidental Ute
+                        </textarea>
+                    </td>
+                    <td>
+                        <label for="Color">Color</label>
+                        <select id="Color" name="Color" multiple>
+                            <option value="4">Azul</option>
+                            <option value="3">Verde</option>
+                            <option value="2">Marron</option>
+                            <option value="1">Negro</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                <td>
+                    <label for="navegadores">Navegadores</label>
+                    <input type="range" id="a" name="a">
+                </td>
+                </tr>
+                <tr>
+                <td>
+                    <label for="nombre">Edad</label>
+                    <input type="number" id="b" name="b">
+                </td>
+                </tr>
+                <tr>
+                <td>
+                    <label for="femenino">Genero</label>
+                    <input type="radio" id="Femenino" name="Femenino"> Femenino
+                    <input type="radio" id="Masculino" name="Masculino"> Masculino
+                </td>
+                </tr>
+                <tr>
+                <td>
+                    <label for="nombre">Hobby</label>
+                    <input type="checkbox" id="Acuario" name="Acuario"> Acuario
+                    <input type="checkbox" id="leer" name="leer"> Leer
+                    <input type="checkbox" id="hablar" name="hablar"> hablar
+                </td>
+                </tr>
+            </table>
+            <button type="submit">Enviar</button>
+        </form>
+    </body>
 </html>
