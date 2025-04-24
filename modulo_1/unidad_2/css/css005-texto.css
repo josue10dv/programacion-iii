@@ -1,0 +1,25 @@
+.texto1 {
+    color: blueviolet;
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    line-height: 1.6;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: capitalize;
+    letter-spacing: 1ch;
+    word-spacing: nowrap;
+}
+
+.texto2 {
+    color: rgb(232, 214, 53);
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    line-height: 1.6;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: capitalize;
+    letter-spacing: 1ch;
+    word-spacing: nowrap;
+}

@@ -1,0 +1,33 @@
+.layout {
+    display: grid;
+
+}
+
+header {
+    grid-area: header;
+    background: #ff9800;
+
+}
+
+aside {
+    grid-area: aside;
+    background: #8bc34a;
+}
+
+main {
+    grid-area: main;
+    background: #03a9f4;
+
+}
+
+footer {
+    grid-area: footer;
+    background: #9c27b0;
+}
+
+.layout>* {
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
