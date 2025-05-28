@@ -6,7 +6,7 @@ import { SuccessResponseDto } from 'src/common/dto/response.dto';
 import { FileInterceptor } from '@nestjs/platform-express';
 import { diskStorage } from 'multer';
 import { Pagination } from 'nestjs-typeorm-paginate';
-import { User } from './entities/user.entity';
+import { Users } from './entities/user.entity';
 import { JwtAuthGuard } from 'src/auth/guards/jwt-auth.guard';
 
 @Controller('users')
@@ -24,7 +24,7 @@ export class UsersController {
     findAll(
         @Query('page') page = 1,
         @Query('limit') limit = 10,
-    ): Promise<Pagination<User>> {
+    ): Promise<Pagination<Users>> {
         limit = limit > 100 ? 100 : limit;
         return this.usersService.findAll({ page, limit });
     }

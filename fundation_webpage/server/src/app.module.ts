@@ -7,6 +7,7 @@ import { PostsModule } from './posts/posts.module';
 import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { VolunteersModule } from './volunteers/volunteers.module';
+import { EventsModule } from './events/events.module';
 
 @Module({
   imports: [
@@ -25,7 +26,8 @@ import { VolunteersModule } from './volunteers/volunteers.module';
     AuthModule,
     UsersModule,
     PostsModule,
-    VolunteersModule
+    VolunteersModule,
+    EventsModule
   ],
   controllers: [
     AppController,
